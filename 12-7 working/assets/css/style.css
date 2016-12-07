@@ -1,0 +1,167 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+  text-shadow: 1px 1px grey;
+
+}
+#header{
+  color: rgba(0,0,0,.8);
+  text-shadow: 1px 1px white;
+}
+nav2 ul li:hover{
+  color:white;
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.heading {
+  height:100vh;
+}
+#ytcontainer {
+  position:absolute;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.cover iframe, .cover object, .cover embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+  overflow:hidden;
+}
+.tv{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background-image: url("images/ice.jpg");
+  background-size: 100vw 100vh;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.pimg{
+  opacity: 1;
+  filter:saturate(150%);
+  width:95%;
+  vertical-align: middle;
+}
+
+.pimg:hover{
+  filter:blur(2px) saturate(250%);
+  vertical-align: middle;
+}
+.gd{
+  width:75%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    max-height:100vh;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.img_resume{
+  width:100%;
+}
+.img_resume_modal{
+  width:80vw:
+}
+.myModal_resume div img {
+  width:80vw:
+}
+.img_resume:hover{
+  filter:blur(2px) saturate(150%);
+}
+.personal_info{
+  font-size: 12pt;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
