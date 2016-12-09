@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Photography | By Jordan Duncan</title>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="assets/css/animate.css"></script>
+  <script src="assets/js/lettering.js"></script>
+  <script src="assets/js/textillate.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <style>
+  .grid-item {
+    float: left;
+    width: 33%;
+    /*height: 200px;*/
+    border: 2px solid white;
+    overflow: hidden;
+  }
+  .grid-item--width2 { width: 33%; }
+  .grid-item--height2 { height: 140px; }
+  .grid-item img {
+    max-width: 100%;
+    display: block;
+  }
+  img{display: none;}
+  /*.grid{position:absolute; width: 90%; margin: 5%}*/
+  h1{
+    font-family: 'Allura', cursive;
+    text-align: center;
+    font-size: 40pt;
+    color: rgba(0, 0, 0, 0.75);
+    display:none;
+    /*display:none;*/
+  }
+  .grid-item:hover{
+    filter:brightness(90%);
+  }
+  .grid-item img:hover{
+    opacity: 1;
+    transform: scale(1.15,1.15);
+    -webkit-transform:scale(1.15,1.15);
+    -moz-transform:scale(1.15,1.15);
+    -ms-transform:scale(1.15,1.15);
+    -o-transform:scale(1.15,1.15);
+    filter:sepia(50%);
+  }
+  </style>
+</head>
+<body>
+  <h1>Jordan Duncan Photography</h1>
+  <hr>
+  <div class="container">
+  <div class="grid">
+  <div class="grid-item" id='eagle'>
+    <img id='eagle' src="assets/css/images/natgeo/bald-eagle.jpg" />
+    <div class="caption-text">
+      <h1>Amazing Caption</h1>
+      <p>Whatever It Is - Always Awesome</p>
+    </div>
+  </div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/butterfly-fish.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/turtle.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/peacock.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/turtle.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/bee.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/eagles.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/polar.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/ladybird.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/tiger.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/croc.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/croc.jpg" /></div>
+  <div class="grid-item"><img src="assets/css/images/natgeo/croc.jpg" /></div>
+
+  </div>
+  </div>
+
+  <script>
+    var elem = document.querySelector('.grid');
+    var msnry = new Masonry( elem, {
+    // options
+      itemSelector: '.grid-item',
+      columnWidth: 200
+      });
+    // element argument can be a selector string
+    //   for an individual element
+    var msnry = new Masonry( '.grid', {
+    // options
+    });
+
+    $('img').each(function(i) {
+    $(this).delay(i * 400).fadeIn(2000);
+    });
+    $('h1').fadeIn(2500);
+    $('h1').textillate({ in: { effect: 'flipInX', delayScale: 3,
+ } });
+   $('.grid-item').mouseenter(
+     function(){
+       console.log('hovered');
+       console.log($(event)[0]['target']['id']);
+     }
+   );
+     </script>
+</body>
+</html>

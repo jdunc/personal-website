@@ -1,5 +1,16 @@
 // minor tweaks to https://codepen.io/ccrch/pen/GgPLVW for this full div vid code
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+	$('.heading').css('position','fixed');
+	$('.heading').css('z-index','1');
+	$('.heading').css('top','0px');
+	$('.heading').css('left','0px');
+	$('.heading').css('width','100vw');
+	$('.heading').css('height','100vh');
+
+
+
+
+	console.log('mobile!');
 }
 else {
 	var tag = document.createElement('script');

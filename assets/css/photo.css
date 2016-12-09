@@ -1,0 +1,27 @@
+.grid-item {
+  float: left;
+  width: 33%;
+  /*height: 200px;*/
+  /*border: .5vw solid white;*/
+  padding: 0.5vw;
+  overflow: hidden;
+}
+.grid-item--width2 { width: 33%; }
+.grid-item--height2 { height: 140px; }
+.grid-item img {
+  max-width: 100%;
+  display:block;
+  opacity:0;
+}
+/*.grid{position:absolute; width: 90%; margin: 5%}*/
+h1{
+  font-family: 'Allura', cursive;
+  text-align: center;
+  font-size: 40pt;
+  color: rgba(0, 0, 0, 0.75);
+  display:none;
+  /*display:none;*/
+}
+.grid-item:hover{
+  filter:brightness(90%);
+}
