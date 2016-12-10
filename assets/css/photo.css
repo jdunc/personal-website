@@ -1,9 +1,9 @@
 .grid-item {
   float: left;
-  width: 33%;
+  width: 30%;
   /*height: 200px;*/
   /*border: .5vw solid white;*/
-  padding: 0.5vw;
+  margin: 0.5vw;
   overflow: hidden;
 }
 .grid-item--width2 { width: 33%; }
@@ -12,6 +12,7 @@
   max-width: 100%;
   display:block;
   opacity:0;
+  transition: all .5s linear;
 }
 /*.grid{position:absolute; width: 90%; margin: 5%}*/
 h1{
@@ -22,6 +23,73 @@ h1{
   display:none;
   /*display:none;*/
 }
-.grid-item:hover{
-  filter:brightness(90%);
+.grid-item:hover img{
+  filter:brightness(110%);
+  transform: scale(1.15,1.15);
+  -webkit-transform:scale(1.15,1.15);
+  -moz-transform:scale(1.15,1.15);
+  -ms-transform:scale(1.15,1.15);
+  -o-transform:scale(1.15,1.15);
+}
+.grid-item:hover .caption{
+  opacity:1;
+}
+.caption{
+  transition: opacity .5s;
+  transition-timing-function: ease-in-out;
+  position:absolute;
+  z-index:1;
+  top:0;
+  left:0;
+  margin-top:40%;
+  width:100%;
+  height:100%;
+  text-align: center;
+  opacity:0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.caption h1{
+  font-size: 3vw;
+  text-shadow: 1px 1px white;
+  line-height: 3vw;
+  font-family: 'Oxygen', sans-serif;
+}
+.caption p{
+  font-size: 5vw;
+  text-shadow: 1px 1px white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1vw;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    max-height:100vh;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 80%;
+    max-height:80%;
+    top: 100%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -5%);
+    opacity:1;
+}
+.modal-content img {
+  max-width:80%;
+  height: auto;
+  max-height: 100%;
 }
