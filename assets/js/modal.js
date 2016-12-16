@@ -8,9 +8,9 @@ var myModal_amo = document.getElementById('myModal_amo');
 $('#myBtn_amo').click(function(){
     myModal_amo.style.display = "block";
 })
-var myModal_bdv = document.getElementById('myModal_bdv');
-$('#myBtn_bdv').click(function(){
-    myModal_bdv.style.display = "block";
+var myModal_sfm = document.getElementById('myModal_sfm');
+$('#myBtn_sfm').click(function(){
+    myModal_sfm.style.display = "block";
 })
 var myModal_gald = document.getElementById('myModal_gald');
 $('#myBtn_gald').click(function(){
@@ -31,8 +31,8 @@ window.onclick = function(event) {
   }else if (event.target == myModal_gald) {
     myModal_gald.style.display = "none";
   }
-  else if (event.target == myModal_bdv) {
-    myModal_bdv.style.display = "none";
+  else if (event.target == myModal_sfm) {
+    myModal_sfm.style.display = "none";
   }   else if (event.target == myModal_resume) {
       myModal_resume.style.display = "none";
   }

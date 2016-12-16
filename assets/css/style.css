@@ -112,7 +112,7 @@ footer.page-footer {
   width:100%;
   height:100%;
   overflow:hidden;
-  background-image: url("images/ice.jpg");
+  background-image: url("images/portfolio/lighthouse2.jpg");
   background-size: 100vw 100vh;
 }
 .helper {
@@ -181,7 +181,12 @@ footer.page-footer {
   width:80vw:
 }
 .img_resume:hover{
-  filter:blur(2px) saturate(150%);
+  filter: saturate(150%);
+  transform: scale(1.02,1.02);
+  -webkit-transform:scale(1.02,1.02);
+  -moz-transform:scale(1.02,1.02);
+  -ms-transform:scale(1.02,1.02);
+  -o-transform:scale(1.02,1.02);
 }
 .personal_info{
   font-size: 12pt;
