@@ -20,6 +20,22 @@ var myModal_resume = document.getElementById('myModal_resume');
 $('.img_resume').click(function(){
     myModal_resume.style.display = "block";
 });
+var myModal_emo1 = document.getElementById('myModal_emotion1');
+$('#myBtn_emo1').click(function(){
+    myModal_emo1.style.display = "block";
+});
+var myModal_emo2 = document.getElementById('myModal_emotion2');
+$('#myBtn_emo2').click(function(){
+    myModal_emo2.style.display = "block";
+});
+var myModal_photo = document.getElementById('myModal_photography');
+$('#myBtn_photo').click(function(){
+    myModal_photography.style.display = "block";
+});
+var myModal_screens = document.getElementById('myModal_screens');
+$('#myBtn_screens').click(function(){
+    myModal_screens.style.display = "block";
+});
 $('.close').click(function() {
   $('.modal').hide();
 });
@@ -35,6 +51,14 @@ window.onclick = function(event) {
     myModal_sfm.style.display = "none";
   }   else if (event.target == myModal_resume) {
       myModal_resume.style.display = "none";
+  } else if (event.target == myModal_emo2) {
+      myModal_emo2.style.display = "none";
+  } else if (event.target == myModal_emo1) {
+      myModal_emo1.style.display = "none";
+  } else if (event.target == myModal_photography) {
+      myModal_photography.style.display = "none";
+  } else if (event.target == myModal_screens) {
+      myModal_screens.style.display = "none";
   }
 }
 $('#resume_text').click(function(){

@@ -198,3 +198,15 @@ footer.page-footer {
 .button{
   z-index:2;
 }
+.pimg2{
+  opacity: 1;
+  filter:saturate(150%);
+  width:95%;
+  vertical-align: middle;
+  padding: 15px;
+}
+
+.pimg2:hover{
+  filter:blur(2px) saturate(250%);
+  vertical-align: middle;
+}
